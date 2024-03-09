@@ -22,7 +22,7 @@ class MachineLearning():
 
         self.counter = 0
 
-        self.flow_dataset = pd.read_csv('/content/drive/My Drive/test/FlowStatsfile.csv')
+        self.flow_dataset = pd.read_csv('FlowStatsfile.csv')
 
         self.flow_dataset.iloc[:, 2] = self.flow_dataset.iloc[:, 2].str.replace('.', '')
         self.flow_dataset.iloc[:, 3] = self.flow_dataset.iloc[:, 3].str.replace('.', '')
